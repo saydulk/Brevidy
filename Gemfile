@@ -18,7 +18,7 @@ gem 'validates_timeliness'
 gem 'heroku'
 # used for file upload
 gem 'carrierwave'
-gem 'fog'
+gem 'fog', '>= 1.12.0'
 # used for image processing
 gem 'mini_magick'
 # used for processing jobs asynchronously in the background
@@ -47,7 +47,7 @@ gem 'rabl'
 # used as the JSON parser for the rabl gem
 gem 'yajl-ruby'
 # this is to get rid of an error with json 1.4.6 
-gem 'json', '~> 1.7'
+gem 'json', '~> 2.3', '>= 2.3.0'
 
 # Gems for the production & staging environments only
 group :production, :staging do
@@ -66,7 +66,7 @@ end
 # Gems for the production environment only
 group :production do
   # logs all of our errors (rails/javascript) to airbrake
-  gem 'airbrake'
+  gem 'airbrake', '>= 3.1.12'
 end
 
 # Gems for the local/dev/staging environment. Make sure to
