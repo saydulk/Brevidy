@@ -15,10 +15,10 @@ gem 'will_paginate'
 # date validation
 gem 'validates_timeliness'
 # used for version control rake task
-gem 'heroku'
+gem 'heroku', '>= 3.99.4'
 # used for file upload
 gem 'carrierwave'
-gem 'fog'
+gem 'fog', '>= 1.11.1'
 # used for image processing
 gem 'mini_magick'
 # used for processing jobs asynchronously in the background
