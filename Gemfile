@@ -3,11 +3,11 @@ source 'http://rubygems.org'
 # there is an issue with rake 0.9.0
 gem 'rake', '0.8.7'
 # Gems for the development and production environment.
-gem 'rails', '3.0.7'
+gem 'rails', '5.2.4.3'
 # use the HAML templating engine
 gem 'haml'
 # generates haml files instead of ERB
-gem 'haml-rails'
+gem 'haml-rails', '>= 0.5.3'
 # use the SASS engine for CSS
 gem 'sass'
 # paginates large results
@@ -17,12 +17,12 @@ gem 'validates_timeliness'
 # used for version control rake task
 gem 'heroku'
 # used for file upload
-gem 'carrierwave'
+gem 'carrierwave', '>= 0.6.0'
 gem 'fog'
 # used for image processing
 gem 'mini_magick'
 # used for processing jobs asynchronously in the background
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.0'
 # used to encode videos
 gem 'zencoder'
 # does modern web browser validation for us
@@ -43,7 +43,7 @@ gem 'koala'
 # used for accessing the twitter api
 gem 'twitter', '~> 4.0'
 # used for creating nested api templates
-gem 'rabl'
+gem 'rabl', '>= 0.8.5'
 # used as the JSON parser for the rabl gem
 gem 'yajl-ruby'
 # this is to get rid of an error with json 1.4.6 
@@ -52,12 +52,12 @@ gem 'json', '~> 1.7'
 # Gems for the production & staging environments only
 group :production, :staging do
   # full text search
-  gem 'thinking-sphinx'
-  gem 'flying-sphinx'
+  gem 'thinking-sphinx', '>= 2.1.0'
+  gem 'flying-sphinx', '>= 1.0.0'
   # autoscales delayed_job workers via hirefireapp.com
   gem 'hirefireapp'
   # use Factory Girl to create users and video posts
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.2.1'
   # use faker to generate pseudo information
   gem 'faker'
   gem 'pg'
@@ -66,7 +66,7 @@ end
 # Gems for the production environment only
 group :production do
   # logs all of our errors (rails/javascript) to airbrake
-  gem 'airbrake'
+  gem 'airbrake', '>= 3.1.12'
 end
 
 # Gems for the local/dev/staging environment. Make sure to
@@ -75,7 +75,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   # use RSpec for testing instead of Test::Unit
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 2.13.2"
   # use Webrat for RSpec helper functions
   gem 'webrat'
   # gives you the ability to launch a page at any point during test
