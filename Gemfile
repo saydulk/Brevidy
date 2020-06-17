@@ -3,11 +3,11 @@ source 'http://rubygems.org'
 # there is an issue with rake 0.9.0
 gem 'rake', '0.8.7'
 # Gems for the development and production environment.
-gem 'rails', '3.0.7'
+gem 'rails', '5.0.0'
 # use the HAML templating engine
 gem 'haml'
 # generates haml files instead of ERB
-gem 'haml-rails'
+gem 'haml-rails', '>= 0.5.3'
 # use the SASS engine for CSS
 gem 'sass'
 # paginates large results
@@ -35,9 +35,9 @@ gem 'httparty'
 # used for memcached interaction
 gem 'dalli'
 # used for facebook/twitter integration
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'omniauth', '>= 1.1.4'
+gem 'omniauth-facebook', '>= 1.6.0'
+gem 'omniauth-twitter', '>= 0.0.16'
 # used for accessing the facebook graph api
 gem 'koala'
 # used for accessing the twitter api
@@ -57,7 +57,7 @@ group :production, :staging do
   # autoscales delayed_job workers via hirefireapp.com
   gem 'hirefireapp'
   # use Factory Girl to create users and video posts
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.2.1'
   # use faker to generate pseudo information
   gem 'faker'
   gem 'pg'
@@ -75,9 +75,9 @@ end
 group :development, :test do
   gem 'sqlite3'
   # use RSpec for testing instead of Test::Unit
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 2.13.2"
   # use Webrat for RSpec helper functions
-  gem 'webrat'
+  gem 'webrat', '>= 0.7.3'
   # gives you the ability to launch a page at any point during test
   gem 'launchy'
   # wipes the db after each run instead of using transactional fixtures
