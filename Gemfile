@@ -18,7 +18,7 @@ gem 'validates_timeliness'
 gem 'heroku'
 # used for file upload
 gem 'carrierwave'
-gem 'fog'
+gem 'fog', '>= 1.14.0'
 # used for image processing
 gem 'mini_magick'
 # used for processing jobs asynchronously in the background
@@ -77,7 +77,7 @@ group :development, :test do
   # use RSpec for testing instead of Test::Unit
   gem "rspec-rails"
   # use Webrat for RSpec helper functions
-  gem 'webrat'
+  gem 'webrat', '>= 0.7.3'
   # gives you the ability to launch a page at any point during test
   gem 'launchy'
   # wipes the db after each run instead of using transactional fixtures
