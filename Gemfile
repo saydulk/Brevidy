@@ -35,8 +35,8 @@ gem 'httparty'
 # used for memcached interaction
 gem 'dalli'
 # used for facebook/twitter integration
-gem 'omniauth'
-gem 'omniauth-facebook'
+gem 'omniauth', '>= 2.0.0'
+gem 'omniauth-facebook', '>= 1.6.0'
 gem 'omniauth-twitter'
 # used for accessing the facebook graph api
 gem 'koala'
