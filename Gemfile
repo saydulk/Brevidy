@@ -37,7 +37,7 @@ gem 'dalli'
 # used for facebook/twitter integration
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '>= 0.0.16'
 # used for accessing the facebook graph api
 gem 'koala'
 # used for accessing the twitter api
