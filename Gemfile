@@ -17,7 +17,7 @@ gem 'validates_timeliness'
 # used for version control rake task
 gem 'heroku'
 # used for file upload
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.3.2'
 gem 'fog'
 # used for image processing
 gem 'mini_magick'
