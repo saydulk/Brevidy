@@ -3,11 +3,11 @@ source 'http://rubygems.org'
 # there is an issue with rake 0.9.0
 gem 'rake', '0.8.7'
 # Gems for the development and production environment.
-gem 'rails', '3.0.7'
+gem 'rails', '6.0.3.5'
 # use the HAML templating engine
 gem 'haml'
 # generates haml files instead of ERB
-gem 'haml-rails'
+gem 'haml-rails', '>= 0.5.3'
 # use the SASS engine for CSS
 gem 'sass'
 # paginates large results
@@ -57,7 +57,7 @@ group :production, :staging do
   # autoscales delayed_job workers via hirefireapp.com
   gem 'hirefireapp'
   # use Factory Girl to create users and video posts
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.2.1'
   # use faker to generate pseudo information
   gem 'faker'
   gem 'pg'
@@ -75,7 +75,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   # use RSpec for testing instead of Test::Unit
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 2.13.2"
   # use Webrat for RSpec helper functions
   gem 'webrat'
   # gives you the ability to launch a page at any point during test
