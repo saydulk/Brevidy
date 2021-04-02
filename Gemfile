@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 # there is an issue with rake 0.9.0
 gem 'rake', '0.8.7'
 # Gems for the development and production environment.
-gem 'rails', '3.0.7'
+gem 'rails', '3.0.20'
 # use the HAML templating engine
 gem 'haml'
 # generates haml files instead of ERB
