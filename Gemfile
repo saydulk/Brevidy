@@ -53,7 +53,7 @@ gem 'json', '~> 1.7'
 group :production, :staging do
   # full text search
   gem 'thinking-sphinx'
-  gem 'flying-sphinx'
+  gem 'flying-sphinx', '>= 1.0.0'
   # autoscales delayed_job workers via hirefireapp.com
   gem 'hirefireapp'
   # use Factory Girl to create users and video posts
