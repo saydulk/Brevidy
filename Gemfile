@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 # there is an issue with rake 0.9.0
 gem 'rake', '0.8.7'
 # Gems for the development and production environment.
-gem 'rails', '3.0.7'
+gem 'rails', '4.0.0'
 # use the HAML templating engine
 gem 'haml'
 # generates haml files instead of ERB
@@ -22,7 +22,7 @@ gem 'fog'
 # used for image processing
 gem 'mini_magick'
 # used for processing jobs asynchronously in the background
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.0.0'
 # used to encode videos
 gem 'zencoder'
 # does modern web browser validation for us
@@ -52,8 +52,8 @@ gem 'json', '~> 1.7'
 # Gems for the production & staging environments only
 group :production, :staging do
   # full text search
-  gem 'thinking-sphinx'
-  gem 'flying-sphinx'
+  gem 'thinking-sphinx', '>= 2.1.0'
+  gem 'flying-sphinx', '>= 1.0.0'
   # autoscales delayed_job workers via hirefireapp.com
   gem 'hirefireapp'
   # use Factory Girl to create users and video posts
