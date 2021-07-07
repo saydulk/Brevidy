@@ -15,7 +15,7 @@ gem 'will_paginate'
 # date validation
 gem 'validates_timeliness'
 # used for version control rake task
-gem 'heroku'
+gem 'heroku', '>= 3.99.4'
 # used for file upload
 gem 'carrierwave'
 gem 'fog'
@@ -39,7 +39,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 # used for accessing the facebook graph api
-gem 'koala'
+gem 'koala', '>= 1.6.0'
 # used for accessing the twitter api
 gem 'twitter', '~> 4.0'
 # used for creating nested api templates
@@ -79,7 +79,7 @@ group :development, :test do
   # use Webrat for RSpec helper functions
   gem 'webrat'
   # gives you the ability to launch a page at any point during test
-  gem 'launchy'
+  gem 'launchy', '>= 2.3.0'
   # wipes the db after each run instead of using transactional fixtures
   gem 'database_cleaner'
 end
